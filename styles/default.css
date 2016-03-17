@@ -39,7 +39,7 @@ body {
 Main Container
 ----------------------------------------------------------------------------------------------------------------------*/
 .social {
-    margin-top: 234px;
+    margin-top: 165px;
     position: fixed;
     top: 0;
     right: -6px;
@@ -207,14 +207,19 @@ Slider container
     display: inline-block;
     margin-left: 10px;
 }
-.features img {
-    width: 210px;
+.slider-container .features img {
+    width: 135px;
     margin-top: 60px;
 }
-.features p {
+.slider-container .features p {
     margin-top: 20px;
-    font-size: 18px;
-    font-family: 'MontserratRegular', serif;
+    font-size: 26px;
+    font-family: 'MontserratLight', serif;
+}
+.slider-container .features hr {
+    height: 2px;
+    background-color: #bebdbc;
+    border: none;
 }
 /* ---------------------------------------------------------------------------------------------------------------------
 Footer container
@@ -413,6 +418,18 @@ Media Queries
  * Phone XS
  */
 @media (max-width: 767px) {
+    .social {
+        margin-top: 0;
+        position: absolute;
+        display: flex;
+        right: 0;
+        left: 0;
+    }
+    .social button {
+        margin-right: 5px;
+        width: 100%;
+        margin-top: 5px;
+    }
     .main-container {
         text-align: center;
     }
@@ -551,7 +568,10 @@ Media Queries
     }
     footer h1 {
         margin-left: 20px;
-        margin-top: 0;
+        margin-top: 20px;
+    }
+    footer .downbtn {
+        margin-top: 50px;
     }
     footer .downbtn h2 {
         margin-top: 0;
