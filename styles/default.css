@@ -47,8 +47,29 @@ Main Container
     font-size: 22px;
     z-index: 1;
 }
-
+.social a {
+    color: #767473;
+}
 .social button {
+    background-color: #d1d1d2;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 2px;
+    border: none;
+}
+.social-second {
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    right: -6px;
+    color: #767473;
+    font-size: 22px;
+    z-index: 1;
+}
+.social-second a {
+    color: #767473;
+}
+.social-second button {
     background-color: #d1d1d2;
     width: 60px;
     height: 60px;
@@ -58,7 +79,7 @@ Main Container
 .main-container {
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/edited.jpg') center top no-repeat;
+    url('../images/cover.png') center top no-repeat;
     background-size: cover;
     height: 610px;
     overflow: hidden;
@@ -167,46 +188,11 @@ Slider container
 ----------------------------------------------------------------------------------------------------------------------*/
 .slider-container {
     width: 100%;
-    /*height: 700px;*/
     height: 400px;
     background: url('../images/blurred_bg.jpg') no-repeat center top;
     background-size: cover;
 }
-.slider-container .slide-title p {
-    font-family: 'MontserratLight', serif;
-    font-size: 30px;
-    color: #00050d;
-}
-.slider-container .slide-title {
-    margin-top: 85px;
-}
-.slider-container .preview-image {
-    background: url('../images/slider_3.png') no-repeat center bottom;
-    height: 522px;
-    margin-top: -17px;
-    background-size: contain;
-}
-.slider-container .circle {
-    height: 15px;
-    width: 15px;
-    background-color: #ffffff;
-    border: 2px solid #3693F1;
-    border-radius: 50px;
-    display: inline-block;
-    margin-left: 10px;
-}
-.slider-container .five-circle {
-    margin-top: 36px;
-}
-.slider-container .five-circle .active {
-    height: 15px;
-    width: 15px;
-    background-color: #3693F1;
-    border: 2px solid #3693F1;
-    border-radius: 50px;
-    display: inline-block;
-    margin-left: 10px;
-}
+
 .slider-container .features img {
     width: 135px;
     margin-top: 60px;
@@ -321,15 +307,16 @@ Support Page Styles
 }
 .cover-image {
     width: 100%; 
-    height: 210px;
-    background: url('../images/8.jpg') no-repeat 40% 68%;
+    height: 350px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/cover.png') no-repeat 40% 68%;
     background-size: cover;
 }
 .image-head h1 {
     color: #fff;
     font-family: 'MontserratUltraLight', serif;
     font-size: 72px;
-    margin-top: 5%;
+    margin-top: 11%;
 }
 div .documentation {
     margin-top: 75px;
@@ -340,22 +327,24 @@ div .documentation {
     color: #3693f1;
     margin-bottom: 20px;
 }
-.documentation p {
+.documentation p,
+.documentation ul {
     font-family: 'MontserratLight', serif;
     font-size: 20px;
     color: #00050d;
-    line-height: 32px;
-    margin-bottom: -40px;
+    line-height: 30px;
+    margin-bottom: -50px;
     font-weight: 100;
 }
 .questions {
-    padding-bottom: 410px;
+    padding-bottom: 180px;
 }
 /* ---------------------------------------------------------------------------------------------------------------------
 Privacy Policy Styles
 ----------------------------------------------------------------------------------------------------------------------*/
 div .intro {
     margin-top: 50px;
+    margin-bottom: 40px;
 }
 .intro h3 {
     font-family: 'MontserratRegular', serif;
@@ -365,13 +354,13 @@ div .intro {
 }
 .intro p {
     font-family: 'MontserratRegular', serif;
-    font-size: 20px;
+    font-size: 22px;
     color: #00050d;
     line-height: 32px;
     margin-bottom: -40px;
 }
 div .info {
-    margin-top: 100px;
+    margin-top: 5px;
 }
 .info h3 {
     font-family: 'MontserratRegular', serif;
@@ -380,12 +369,21 @@ div .info {
     margin-bottom: 25px;
 }
 .info p {
-    font-family: 'MontserratUltraLight', serif;
-    font-size: 16px;
+    font-family: 'MontserratLight', serif;
+    font-size: 20px;
     color: #00050d;
     margin-bottom: -40px;
-    line-height: 26px;
-    font-weight: 600;
+    line-height: 30px;
+    font-weight: 100;
+    padding-bottom: 60px;
+}
+.info ul {
+    margin-top: -17px;
+    font-family: 'MontserratLight', serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+    color: #00050d;
 }
 div .option {
     margin-top: 80px;
@@ -425,10 +423,21 @@ Media Queries
         right: 0;
         left: 0;
     }
+    .social a {
+        margin-right: 5px;
+        width: 100%;
+    }
     .social button {
         margin-right: 5px;
         width: 100%;
-        margin-top: 5px;
+        height: 40px;
+    }
+    .social-second {
+        margin-top: 65px;
+    }
+    .social-second button {
+        height: 40px;
+        width: 40px;
     }
     .main-container {
         text-align: center;
@@ -439,9 +448,11 @@ Media Queries
     .main-container .description h1 {
         font-size: 50px;
         letter-spacing: 10px;
+        margin-top: 30px;
     }
     .main-container .description p {
         font-size: 26px;
+        margin-top: 40px;
     }
     .main-container .store-btn {
         height: 70px;
@@ -492,18 +503,30 @@ Media Queries
         font-size: 18px;
         font-weight: 800;
     }
+    .cover-image {
+        height: 260px;
+    }
+    .home {
+        margin: 10px 0;
+    }
     /*Support page media Queries*/
     .documentation p,
-    .documentation h3 {
-        text-align: center;
+    .documentation ul {
+        text-align: left;
+        font-size: 15px;
+        line-height: 22px;
     }
     .image-head h1 {
-        font-size: 55px;
+        font-size: 45px;
+        margin-top: 28%;
     }
     /*Privacy Policy media Queries*/
-    .intro p,
-    .info p, .option p {
-        text-align: center;
+    .info p,
+    .info ul  {
+        text-align: left;
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 22px
     }
     h3 {
         text-align: center;
@@ -526,6 +549,9 @@ Media Queries
     .second .startbtn, 
     .second .learnbtn  {
         font-size: 16px;
+    }
+    .image-head h1 {
+        margin-top: 18%;
     }
     footer {
         height: 252px;
@@ -553,6 +579,19 @@ Media Queries
     }
     footer .smallbtn {
         height: 52px;
+    }
+    .documentation p,
+    .documentation ul {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .info p,
+    .info ul  {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 26px
     }
 }
 
