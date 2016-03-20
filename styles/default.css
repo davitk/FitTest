@@ -58,10 +58,10 @@ Main Container
     border: none;
 }
 .social-second {
-    margin-top: 70px;
+    margin-top: 89px;
     position: fixed;
     top: 0;
-    right: -6px;
+    right: -8px;
     color: #767473;
     font-size: 22px;
     z-index: 1;
@@ -117,7 +117,7 @@ Main Container
 .main-container .store-btn {
     font-family: 'MontserratLight', serif;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 5px;
+    padding: 11px 5px;
     border-radius: 40px;
     width: 270px;
     height: 80px;
@@ -125,7 +125,10 @@ Main Container
     text-align: center;
     border: 2px solid #787878;
 }
-
+.main-container .description a {
+    color: #fff;
+    text-decoration: none;
+}
 .main-container .store-btn img {
     padding-right: 25px;
     padding-bottom: 10px;
@@ -261,7 +264,7 @@ footer .smallbtn {
     color: #fff;
     font-family: 'MontserratLight', serif;
     background-color: #172026;
-    padding: 5px 5px;
+    padding: 4px 5px;
     border-radius: 40px;
     width: 270px;
     height: 59px;
@@ -279,35 +282,15 @@ footer .smallbtn:hover {
 /* ---------------------------------------------------------------------------------------------------------------------
 Support Page Styles
 ----------------------------------------------------------------------------------------------------------------------*/
-.home-btn {
-    width: 100%;
+.backhome-btn {
+    height: 80px;
 }
-.home {
-    background-color: #fff;
-    border: none;
-    color: #3693f1;
-    margin-left: 23px;
-    font-family: 'MontserratLight', serif;
-    font-size: 24px;
-    margin-top: 22px;
-    margin-bottom: 20px;
-    display: flex;
-    display: -moz-box;
-    white-space: nowrap;
-}
-.home img {
-    height: 45px;
-    padding-right: 12px;
-}
-.back a {
-    margin-top: 5px;
-    vertical-align: middle;
-    color: #3693f1 !important;
-    text-decoration: none !important;
+.backhome-btn img {
+    height: 84px;
 }
 .cover-image {
     width: 100%; 
-    height: 350px;
+    height: 200px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/cover.png') no-repeat 40% 68%;
     background-size: cover;
@@ -316,7 +299,7 @@ Support Page Styles
     color: #fff;
     font-family: 'MontserratUltraLight', serif;
     font-size: 72px;
-    margin-top: 11%;
+    margin-top: 6%;
 }
 div .documentation {
     margin-top: 75px;
@@ -385,26 +368,6 @@ div .info {
     font-weight: 100;
     color: #00050d;
 }
-div .option {
-    margin-top: 80px;
-    padding-left: 60px;
-}
-.option h3 {
-    font-family: 'MontserratRegular', serif;
-    font-size: 20px;
-    color: #00050d;
-    margin-bottom: 25px;
-    margin-top: 0;
-    font-weight: normal;
-}
-.option p {
-    font-family: 'MontserratUltraLight', serif;
-    font-size: 16px;
-    color: #00050d;
-    margin-bottom: -50px;
-    line-height: 26px;
-    font-weight: 600;
-}
 .introduction {
     padding-bottom: 120px;
 }
@@ -433,11 +396,18 @@ Media Queries
         height: 40px;
     }
     .social-second {
-        margin-top: 65px;
+        margin-top: 20px;
+        position: relative;
+        display: flex;
     }
     .social-second button {
         height: 40px;
         width: 40px;
+        margin-right: 5px;
+    }
+    .backhome-btn img {
+        height: 60px;
+        margin-top: 10px;
     }
     .main-container {
         text-align: center;
@@ -457,6 +427,7 @@ Media Queries
     .main-container .store-btn {
         height: 70px;
         width: 100%;
+        padding: 5px 5px;
     }
     .second .twobutton {
         text-align: center;
@@ -504,10 +475,7 @@ Media Queries
         font-weight: 800;
     }
     .cover-image {
-        height: 260px;
-    }
-    .home {
-        margin: 10px 0;
+        height: 180px;
     }
     /*Support page media Queries*/
     .documentation p,
@@ -518,7 +486,7 @@ Media Queries
     }
     .image-head h1 {
         font-size: 45px;
-        margin-top: 28%;
+        margin-top: 22%;
     }
     /*Privacy Policy media Queries*/
     .info p,
@@ -545,13 +513,25 @@ Media Queries
     .main-container .store-btn {
         height: 70px;
         width: 270px;
+        padding: 5px 5px;
+    }
+    .social-second {
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        padding-left: 120px;
+    }
+    .social-second button {
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
     }
     .second .startbtn, 
     .second .learnbtn  {
         font-size: 16px;
     }
     .image-head h1 {
-        margin-top: 18%;
+        margin-top: 9%;
     }
     footer {
         height: 252px;
