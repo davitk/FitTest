@@ -144,7 +144,9 @@ Second Container
     height: 420px;
     background-color: #ffffff;
 }
-
+.twobutton a {
+    text-decoration: none;
+}
 .second .textinfo {
     margin-top: 85px;
     color: #00050d;
